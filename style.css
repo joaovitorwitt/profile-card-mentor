@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+
+.bg-top {
+    position: absolute;
+    z-index: 9;
+    top: -80%;
+    right: 50%;
+}
+
+.bg-bottom {
+    z-index: 9;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+}
+
+/* CARD PROFILE WRAPPER */
+
+main {
+    z-index: 10;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.banner img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.profile-information {
+    text-align: center;
+}
+
+.picture {
+    transform: translateY(-50%);    
+} 
+
+.name {
+    transform: translateY(-60%);
+}
+
+.name h2 {
+    color: hsl(229, 23%, 23%);
+}
+
+.name h2 span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.name p {
+    color: hsl(0, 0%, 59%);
+    margin-top: .5rem;
+}
+
+
+.profile-information .picture img {
+    z-index: 11;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #ffffff
+}
+
+
+.profile-status {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.single h3 {
+    color: hsl(229, 23%, 23%);
+}
+
+.single p {
+    color: hsl(0, 0%, 59%);
+    font-size: .8rem;
+    font-weight: 700;
+}
